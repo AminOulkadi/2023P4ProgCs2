@@ -1,14 +1,22 @@
 ﻿namespace ConsoleMonGame
 {
     internal class Skill
-        {
-            internal int damage;
-            internal int energyCost;
+    {
+        public int damage;
+        public int energyCost;
+        public Element element;
 
-            internal void UseOn(ConsoleMon target, ConsoleMon caster)
+        internal void UseOn(ConsoleMon targetMon, ConsoleMon casterMon)
+        {
+            targetMon.TakeDamage(damage);
+
+            if (targetMon.weakness == element)
             {
-                caster.DepleteEnergy(energyCost);
-                target.TakeDamage(damage);
+                int reducedDamage = damage / 2;
+                targetMon.TakeDamage(reducedDamage);
             }
+
+            casterMon.DepleteEnergy(energyCost);
         }
+    }
 }

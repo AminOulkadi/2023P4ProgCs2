@@ -1,12 +1,13 @@
-﻿namespace ConsoleMonGame
+﻿using System.Xml.Linq;
+
+namespace ConsoleMonGame
 {
     internal class ConsoleMon
     {
         public int Health;
         public int Energy;
         public string Name;
-
-      
+        public Element weakness;
 
         internal void TakeDamage(int damage)
         {
@@ -15,7 +16,7 @@
 
         internal void DepleteEnergy(int energy)
         {
-            this.Energy -= energy;
+            Energy -= energy;
         }
     }
 }

@@ -19,7 +19,8 @@ class Program
         };
         skill.UseOn(targetMon, casterMon);
 
-        Console.WriteLine(targetMon.Health == -100);
+        Console.WriteLine(targetMon.Health == -150);
+
         Console.WriteLine(casterMon.Energy == -20);
     }
 }
