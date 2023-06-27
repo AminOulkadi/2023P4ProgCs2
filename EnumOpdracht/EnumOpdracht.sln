@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumOpdracht", "EnumOpdracht\EnumOpdracht.csproj", "{2B8255A7-D150-4192-A49E-88F29FA1A158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "colors", "colors\colors.csproj", "{0A86BD59-CA23-4F1C-8AE8-6BB6706704B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B8255A7-D150-4192-A49E-88F29FA1A158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8255A7-D150-4192-A49E-88F29FA1A158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8255A7-D150-4192-A49E-88F29FA1A158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8255A7-D150-4192-A49E-88F29FA1A158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A86BD59-CA23-4F1C-8AE8-6BB6706704B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A86BD59-CA23-4F1C-8AE8-6BB6706704B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A86BD59-CA23-4F1C-8AE8-6BB6706704B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A86BD59-CA23-4F1C-8AE8-6BB6706704B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CE38E39-3406-4D3C-9ED2-9CE70049F9FD}
+	EndGlobalSection
+EndGlobal
