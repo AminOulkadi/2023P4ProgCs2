@@ -1,4 +1,4 @@
-﻿using System.Xml.Linq;
+﻿using System;
 
 namespace ConsoleMonGame
 {
@@ -7,7 +7,7 @@ namespace ConsoleMonGame
         public int Health;
         public int Energy;
         public string Name;
-        public Element weakness;
+        public Element Weakness;
 
         internal void TakeDamage(int damage)
         {

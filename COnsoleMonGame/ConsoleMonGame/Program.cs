@@ -10,10 +10,24 @@ class Program
     }
     static void Main(string[] args)
     {
+        TestConsoleMonFunctions();  
         TestSkillFunctions();
+        TestFactoryFunctions();
     }
 
-    static void TestSkillFunctions()
+    static void TestConsoleMonFunctions()
+    {
+        Console.WriteLine("TestConsoleMonFunctions");
+        ConsoleMon mon = new ConsoleMon();
+        mon.TakeDamage(100);
+        mon.DepleteEnergy(20);
+
+        Console.WriteLine(mon.Health == -100);
+
+        Console.WriteLine(mon.Energy == -20);
+    }
+
+        static void TestSkillFunctions()
     {
         Console.WriteLine("TestSkillFunctions");
         ConsoleMon casterMon = new ConsoleMon();

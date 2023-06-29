@@ -10,7 +10,7 @@
         {
             targetMon.TakeDamage(damage);
 
-            if (targetMon.weakness == element)
+            if (targetMon.Weakness == element)
             {
                 int reducedDamage = damage / 2;
                 targetMon.TakeDamage(reducedDamage);
