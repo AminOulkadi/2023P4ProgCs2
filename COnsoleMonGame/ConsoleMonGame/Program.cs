@@ -2,6 +2,12 @@
 
 class Program
 {
+    static void TestFactoryFunctions()
+    {
+        Console.WriteLine("TestFactoryFunctions");
+        ConsoleMonFactory factory = new ConsoleMonFactory();
+        factory.Load("monsterdata.txt");
+    }
     static void Main(string[] args)
     {
         TestSkillFunctions();
