@@ -16,7 +16,7 @@ class Program
 
             string[] keyValue = content.Split(':');
 
-            Console.WriteLine("Cijferlijst: " + keyValue[0]);
+            Console.WriteLine(keyValue[0]);
 
             string[] cijfersPerVak = keyValue[1].Split(',');
 

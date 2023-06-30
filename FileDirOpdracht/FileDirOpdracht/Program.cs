@@ -5,10 +5,7 @@ class Program
 {
     static void Main()
     {
-        // Nieuwe lokale variabele "dir" van het type DirectoryInfo
         DirectoryInfo dir = new DirectoryInfo(@"C:\Users\amino\OneDrive\Documenten\Ma (school)\bewijzenmap\1.4\progM4\2023P4ProgCs2");
-
-        // Bestanden ophalen
         FileInfo[] files = dir.GetFiles();
 
         Console.WriteLine("Bestanden:");
@@ -17,7 +14,6 @@ class Program
             Console.WriteLine(files[i].Name);
         }
 
-        // Directories ophalen
         DirectoryInfo[] directories = dir.GetDirectories();
 
         Console.WriteLine("Directories:");

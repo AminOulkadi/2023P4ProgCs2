@@ -1,6 +1,7 @@
 ﻿using ConsoleMonGame;
 using System;
 using System.IO;
+using System.Text.Json;
 
 internal class ConsoleMonFactory
 {
@@ -24,4 +25,14 @@ internal class ConsoleMonFactory
             Console.WriteLine(dataMon.Health);
         }
     }
+    internal void LoadJson(string datafile)
+    {
+
+        string json = File.ReadAllText(datafile);
+        Console.WriteLine(json);
+        List<ConsoleMon> templates = JsonSerializer.Deserialize<List<ConsoleMon>>(json);
+        Console.WriteLine(templates[0].Name);
+
+    }
+
 }

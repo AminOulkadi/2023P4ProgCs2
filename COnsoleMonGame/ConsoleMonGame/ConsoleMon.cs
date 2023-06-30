@@ -2,7 +2,7 @@
 
 namespace ConsoleMonGame
 {
-    internal class ConsoleMon
+    public class ConsoleMon
     {
         public int Health;
         public int Energy;

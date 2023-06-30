@@ -1,6 +1,6 @@
 ﻿namespace ConsoleMonGame
 {
-    internal class Skill
+    public class Skill
     {
         public int damage;
         public int energyCost;
